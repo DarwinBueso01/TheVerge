@@ -1,0 +1,104 @@
+/* General */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+}
+
+
+
+.heroImage{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80") no-repeat center center/cover;
+    height: 930px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.heroImage h1{
+    color: #EC008C;
+    font-size: 60px;
+}
+
+.heroImage p{
+    font-size: 25px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.heroInfo{
+    position: absolute;
+    top: 55%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 650px;
+}
+
+.heroInfo h1 p, .darwinHero-btn{
+    padding: 20px;
+    color: white;
+}
+
+/* Button */
+
+.darwinHero-btn{
+    background: #393092;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.darwinHero-btn:hover{
+    background: #EC008C;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Media Queries Start Here */
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .heroImage{
+        height: 630px;
+    }
+    .heroImage h1{
+        font-size: 30px;
+    }
+    .heroImage p{
+        font-size: 15px;
+    }
+    .darwinHero-btn{
+        font-size: 13px;
+        padding: 10px 10px 10px 10px;
+    }
+    .heroInfo{
+        left: 50%;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1000px){
+    .heroInfo{
+        left: 50%;
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px){
+    .heroInfo{
+        left: 50%;
+    }
+}

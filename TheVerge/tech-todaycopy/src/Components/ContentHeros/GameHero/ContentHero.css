@@ -1,0 +1,50 @@
+.card-img{
+  opacity: .3;
+  height: 35rem !important;
+}
+
+.card-img-overlay{
+  text-align: center;
+  margin-top: 10rem;
+  
+}
+.gaming-title{
+  font-size: 35px !important;
+  font-weight: bold !important;   
+}
+.card-text{
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .card-img-overlay{
+      text-align: center;
+      margin-top: 4rem;
+      font-weight: bold;
+  }
+  .card-text{
+      font-size: 16px;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    span{
+        display: none;
+    }
+    .hero{
+        display: grid;
+        row-gap: 20px;
+    }
+    .card{
+        width: 55rem;
+        height: 20rem; 
+    }
+    .video-its{
+        width: 55rem;
+        height: 20rem;
+      }
+  }
+  .card-img{
+      height: 25rem !important;
+  }
+} 

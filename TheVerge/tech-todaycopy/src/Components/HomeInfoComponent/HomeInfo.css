@@ -1,0 +1,104 @@
+.HomeInfo-Section-0{
+    display: flex;
+    flex-direction: row;
+    padding: 70px 70px 150px 70px;
+}
+
+.Image-container-1{
+    background: url("https://cdn.vox-cdn.com/thumbor/ua07_RNJGpPwHJufaVNro9b5Nuo=/0x0:2050x1367/836x836/filters:focal(861x520:1189x848):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66995080/VRG_4077_001_2050x1367.0.jpg") no-repeat center/cover;
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.Image-container-2{
+    background: url("https://cdn.vox-cdn.com/thumbor/u023TzdOIdSqHN0hb5oplwxLGIs=/0x0:2040x1360/1820x1213/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66995027/dseifert_200625_4076_0004.0.0.jpg") no-repeat center/cover;
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.Info-Container-0{
+    width: 400px;
+    height: 400px;
+    padding: 60px 30px 30px 30px;
+    text-align: start;
+    border: solid 1px rgb(107, 66, 114);
+}
+
+.darwinH1{
+    padding-bottom: 15px;
+}
+
+.darwinNews-aTag{
+    color: #EC008C;
+}
+
+.darwinNews-aTag:hover{
+    color: rgb(107, 66, 114);
+}
+
+.InframesTitle--0{
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .HomeInfo-Section-0{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 10px 10px 10px;
+    }
+    .Image-container-1{
+        width: 250px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    .Image-container-2{
+        width: 250px;
+        height: 200px;
+        margin-left: 50px;
+    }
+    .Info-Container-0{
+        width: 250px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        height: 250px;
+    }
+    .darwinH1{
+        font-size: 15px;
+    }
+    .darwinPtag{
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1200px){
+    .HomeInfo-Section-0{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px 50px 10px;
+    }
+    .Image-container-1{
+        width: 450px;
+        height: 300px;
+    }
+    .Image-container-2{
+        width: 450px;
+        height: 300px;
+    }
+    .Info-Container-0{
+        padding: 30px 30px 30px 30px;
+        width: 450px;
+        height: 300px;
+    }
+    .darwinH1{
+        font-size: 15px;
+    }
+    .darwinPtag{
+        font-size: 10px;
+    }
+}

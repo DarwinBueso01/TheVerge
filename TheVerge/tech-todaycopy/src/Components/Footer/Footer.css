@@ -1,0 +1,222 @@
+/* Footer Styling */
+.footer {
+    background-color: #000000;
+    color: #e2127a;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__bottom {
+    width: 100%;
+    height: 7vh;
+    border-top: 0.5px solid #343434;
+    background-color: #060606;
+    font-size: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4e4e4e;
+}
+.footer .footer__content {
+    padding: 1rem 0rem;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.footer .footer__content-image {
+    width: 100%;
+    justify-self: flex-start;
+    align-self: center;
+    
+/*    border-right: 0.5px solid #343434; */
+}
+.socials-heading {
+    width: 50%;
+    margin: 0.4rem auto;
+    border-top: 1.5px solid #343434;
+    padding-top: 0.5rem;
+}
+.socials-heading h3 {
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+.footer .footer__content-socials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer .footer__content-socials a {
+    width: fit-content;
+    height: fit-content;
+    color: #e2127a;
+}
+
+.footer .footer__content-socials a i {
+    width: fit-content;
+    height: fit-content;
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+.footer .footer__content-socials a i:hover {
+    color: whitesmoke;
+}
+.footer__content-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    justify-self: center;
+    font-size: 1rem;
+    padding: 1.3rem;
+/*    border-left: 0.5px solid #343434; */
+}
+.footer__content-links ul {
+    display: grid;
+    
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+.footer__content-links li {
+    margin: 1rem;
+}
+.footer__content-links li:hover {
+    color: whitesmoke;
+}
+.footer__subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.6rem;
+    color: rgb(233, 231, 231);
+    letter-spacing: 0px;
+}
+.footer__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer__subscribe-form p {
+    font-size: 0.7rem;
+    color: #b1b1b1;
+    margin-bottom: 1.5rem;
+}
+input {
+    height: 1.9rem;
+}
+.footer__btn {
+    background: #e2127a;;
+    color: white;
+    border: 1px solid black;
+    height: 3.75rem;
+    width: 40%;
+}
+.footer__btn:hover {
+    background: #e2127ac7;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+
+
+/* Media Query Styling  */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    .footer {
+        height: 1200px;
+        position: relative;
+    }
+    .footer__bottom {
+        position: absolute;
+        bottom: 0;
+    }
+    .footer .footer__content {
+        height: 1100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .footer__subscribe {
+        height: 30rem;
+        border-top: 0.5px solid #343434;
+    }
+    .footer__subscribe-form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    .footer__input,
+    .footer__btn {
+        width: 100%;
+    }
+    .footer__content-links {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        border-top: 0.5px solid #343434;
+    }
+    .footer__content-links ul{
+        height: 130px;
+        display: block;
+    }
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    .footer {
+        height: 1200px;
+        position: relative;
+    }
+    .footer__bottom {
+        position: absolute;
+        bottom: 0;
+    }
+    .footer .footer__content {
+        height: 1100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+    .footer__subscribe {
+        height: 30rem;
+        border-top: 0.5px solid #343434;
+    }
+    .footer__subscribe-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__input,
+    .footer__btn {
+        width: 100%;
+    }
+    .footer__content-links {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        border-top: 0.5px solid #343434;
+    }
+    .footer__content-links ul{
+        height: 130px;
+        display: block;
+    }
+
+}
